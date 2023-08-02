@@ -39,3 +39,12 @@
 //             res.end();
 //         });
 //     }
+//     if(pathname === '/comics' && req.method == 'DELETE'){
+    //         const comicsOriginales = await fs.readFile('./datos/comics.txt');
+//         const objetoComicsOriginal = JSON.parse(comicsOriginales);
+
+//         const id = params.get('id');
+
+//         delete objetoComicsOriginal[id];
+
+//         await fs.writeFile('./datos/comics.txt', JSON.stringify(objetoComicsOriginal, null, 2));
